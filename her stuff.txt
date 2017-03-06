@@ -1,0 +1,116 @@
+{"app_name":"Instagram","timestamp":"2017-03-01 16:58:40.80 -0700","app_version":"10.9.0","slice_uuid":"4916f0cc-cfa0-dba5-2456-0c7ed78e68e5","adam_id":389801252,"build_version":"50120891","bundleID":"com.burbn.instagram","share_with_app_devs":true,"is_first_party":false,"bug_type":"109","os_version":"iPhone OS 10.2.1 (14D27)","incident_id":"825C2C39-68D4-4AE0-A1CA-41A1C1650F43","name":"Instagram"}
+Incident Identifier: 825C2C39-68D4-4AE0-A1CA-41A1C1650F43
+CrashReporter Key:   e16e5ae905ec85ab1b432b397fb96621e1ff85ff
+Hardware Model:      iPhone7,2
+Process:             Instagram [2979]
+Path:                /private/var/containers/Bundle/Application/6F5F70FB-E4D2-4ABD-8110-45B58573B2B1/Instagram.app/Instagram
+Identifier:          com.burbn.instagram
+Version:             50120891 (10.9.0)
+Code Type:           ARM-64 (Native)
+Role:                Foreground
+Parent Process:      launchd [1]
+Coalition:           com.burbn.instagram [914]
+
+
+Date/Time:           2017-03-01 16:58:39.9524 -0700
+Launch Time:         2017-03-01 16:45:33.0746 -0700
+OS Version:          iPhone OS 10.2.1 (14D27)
+Report Version:      104
+
+Exception Type:  EXC_CRASH (SIGKILL)
+Exception Codes: 0x0000000000000000, 0x0000000000000000
+Exception Note:  EXC_CORPSE_NOTIFY
+Termination Reason: Namespace SPRINGBOARD, Code 0x8badf00d
+Triggered by Thread:  0
+
+Filtered syslog:
+None found
+
+Thread 0 name:  Dispatch queue: com.apple.main-thread
+Thread 0 Crashed:
+0   libsystem_kernel.dylib        	0x000000019124d188 0x19124c000 + 4488
+1   libsystem_kernel.dylib        	0x000000019124cff8 0x19124c000 + 4088
+2   CoreFoundation                	0x000000019224a5d0 0x19216d000 + 906704
+3   CoreFoundation                	0x00000001922481ec 0x19216d000 + 897516
+4   CoreFoundation                	0x00000001921762b8 0x19216d000 + 37560
+5   GraphicsServices              	0x0000000193c2a198 0x193c1e000 + 49560
+6   UIKit                         	0x00000001981bd7fc 0x198143000 + 501756
+7   UIKit                         	0x00000001981b8534 0x198143000 + 480564
+8   Instagram                     	0x00000001000e8df4 0x1000e0000 + 36340
+9   libdyld.dylib                 	0x00000001911595b8 0x191155000 + 17848
+
+Thread 1 name:  com.apple.uikit.eventfetch-thread
+Thread 1:
+0   libsystem_kernel.dylib        	0x000000019124d188 0x19124c000 + 4488
+1   libsystem_kernel.dylib        	0x000000019124cff8 0x19124c000 + 4088
+2   CoreFoundation                	0x000000019224a5d0 0x19216d000 + 906704
+3   CoreFoundation                	0x00000001922481ec 0x19216d000 + 897516
+4   CoreFoundation                	0x00000001921762b8 0x19216d000 + 37560
+5   Foundation                    	0x0000000192cb326c 0x192ca7000 + 49772
+6   Foundation                    	0x0000000192cd3dd0 0x192ca7000 + 183760
+7   UIKit                         	0x0000000198b31c38 0x198143000 + 10415160
+8   Foundation                    	0x0000000192db0e68 0x192ca7000 + 1089128
+9   libsystem_pthread.dylib       	0x0000000191331850 0x19132e000 + 14416
+10  libsystem_pthread.dylib       	0x0000000191331760 0x19132e000 + 14176
+11  libsystem_pthread.dylib       	0x000000019132ed94 0x19132e000 + 3476
+
+Thread 2 name:  com.apple.NSURLConnectionLoader
+Thread 2:
+0   libsystem_kernel.dylib        	0x000000019124d188 0x19124c000 + 4488
+1   libsystem_kernel.dylib        	0x000000019124cff8 0x19124c000 + 4088
+2   CoreFoundation                	0x000000019224a5d0 0x19216d000 + 906704
+3   CoreFoundation                	0x00000001922481ec 0x19216d000 + 897516
+4   CoreFoundation                	0x00000001921762b8 0x19216d000 + 37560
+5   CFNetwork                     	0x000000019297ba70 0x19289c000 + 916080
+6   Foundation                    	0x0000000192db0e68 0x192ca7000 + 1089128
+7   libsystem_pthread.dylib       	0x0000000191331850 0x19132e000 + 14416
+8   libsystem_pthread.dylib       	0x0000000191331760 0x19132e000 + 14176
+9   libsystem_pthread.dylib       	0x000000019132ed94 0x19132e000 + 3476
+
+Thread 3:
+0   libsystem_kernel.dylib        	0x000000019124d188 0x19124c000 + 4488
+1   libsystem_kernel.dylib        	0x000000019124cff8 0x19124c000 + 4088
+2   Instagram                     	0x000000010010a3f0 0x1000e0000 + 173040
+3   libsystem_pthread.dylib       	0x0000000191331850 0x19132e000 + 14416
+4   libsystem_pthread.dylib       	0x0000000191331760 0x19132e000 + 14176
+5   libsystem_pthread.dylib       	0x000000019132ed94 0x19132e000 + 3476
+
+Thread 4 name:  AFNetworking
+Thread 4:
+0   libsystem_kernel.dylib        	0x000000019124d188 0x19124c000 + 4488
+1   libsystem_kernel.dylib        	0x000000019124cff8 0x19124c000 + 4088
+2   CoreFoundation                	0x000000019224a5d0 0x19216d000 + 906704
+3   CoreFoundation                	0x00000001922481ec 0x19216d000 + 897516
+4   CoreFoundation                	0x00000001921762b8 0x19216d000 + 37560
+5   Foundation                    	0x0000000192cb326c 0x192ca7000 + 49772
+6   Foundation                    	0x0000000192d07aa0 0x192ca7000 + 395936
+7   Instagram                     	0x0000000100103388 0x1000e0000 + 144264
+8   Foundation                    	0x0000000192db0e68 0x192ca7000 + 1089128
+9   libsystem_pthread.dylib       	0x0000000191331850 0x19132e000 + 14416
+10  libsystem_pthread.dylib       	0x0000000191331760 0x19132e000 + 14176
+11  libsystem_pthread.dylib       	0x000000019132ed94 0x19132e000 + 3476
+
+Thread 5 name:  AVAudioSession Notify Thread
+Thread 5:
+0   libsystem_kernel.dylib        	0x000000019124d188 0x19124c000 + 4488
+1   libsystem_kernel.dylib        	0x000000019124cff8 0x19124c000 + 4088
+2   CoreFoundation                	0x000000019224a5d0 0x19216d000 + 906704
+3   CoreFoundation                	0x00000001922481ec 0x19216d000 + 897516
+4   CoreFoundation                	0x00000001921762b8 0x19216d000 + 37560
+5   AVFAudio                      	0x00000001abe17d24 0x1abda2000 + 482596
+6   AVFAudio                      	0x00000001abe3dd9c 0x1abda2000 + 638364
+7   libsystem_pthread.dylib       	0x0000000191331850 0x19132e000 + 14416
+8   libsystem_pthread.dylib       	0x0000000191331760 0x19132e000 + 14176
+9   libsystem_pthread.dylib       	0x000000019132ed94 0x19132e000 + 3476
+
+Thread 6 name:  com.squareup.SocketRocket.NetworkThread
+Thread 6:
+0   libsystem_kernel.dylib        	0x000000019124d188 0x19124c000 + 4488
+1   libsystem_kernel.dylib        	0x000000019124cff8 0x19124c000 + 4088
+2   CoreFoundation                	0x000000019224a5d0 0x19216d000 + 906704
+3   CoreFoundation                	0x00000001922481ec 0x19216d000 + 897516
+4   CoreFoundation                	0x00000001921762b8 0x19216d000 + 37560
+5   Foundation                    	0x0000000192cb326c 0x192ca7000 + 49772
+6   Instagram                     	0x000000010015b18c 0x1000e0000 + 504204
+7   Foundation                    	0x0000000192db0e68 0x192ca7000 + 1089128
+8   libsystem_pthread.dylib       	0x0000000191331850 0x19132e000 + 14416
